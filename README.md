@@ -247,7 +247,7 @@ Select language:
   1. English (en)
   2. German (de)
 
-Enter your choice (1 or 2) [default: 1]: 1
+Enter your choice (1 or 2) [default: 1] (or 'quit' to exit): 1
 
 ======================================================================
 

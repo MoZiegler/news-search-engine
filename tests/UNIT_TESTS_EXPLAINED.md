@@ -125,6 +125,8 @@ tests/
 ├── __init__.py              # Makes 'tests' a package
 ├── test_csv_handler.py      # Tests CSV export functionality
 ├── test_entity_extractor.py # Tests NER extraction
+├── test_i18n.py             # Tests internationalization/translation
+├── test_news_api.py         # Tests API calls including key existance
 ├── test_summarizer.py       # Tests headline summarization
 └── UNIT_TESTS_EXPLAINED.md  # This file
 ```
