@@ -1,0 +1,67 @@
+{
+  "app": {
+    "title": "News Search Engine",
+    "welcome": "Welcome to the News Search Engine",
+    "goodbye": "Thank you for using News Search Engine. Goodbye!",
+    "interrupted": "Interrupted. Goodbye!"
+  },
+  "language": {
+    "select": "Select language:",
+    "english": "English (en)",
+    "german": "German (de)",
+    "prompt": "Enter your choice (1 or 2) [default: 1] (or 'quit' to exit): ",
+    "invalid": "Invalid choice. Please enter 1 or 2.",
+    "selected": "Selected"
+  },
+  "search": {
+    "prompt": "Enter a topic to search for (or 'quit' to exit): ",
+    "searching": "🔍 Searching for news about: '{query}' (language: {language})",
+    "please_wait": "Please wait...",
+    "found": "✓ Found {count} articles",
+    "no_results": "❌ No articles found. Please try a different query.",
+    "invalid_topic": "⚠️  Please enter a valid topic.",
+    "another": "Search for another topic? (y/n) [default: y]: "
+  },
+  "display": {
+    "top_articles": "TOP 15 ARTICLES (sorted by relevancy)",
+    "summary": "SUMMARY OF TOP 15 HEADLINES",
+    "entities": "NAMED ENTITY ANALYSIS",
+    "source": "Source",
+    "published": "Published",
+    "saved": "📄 All {count} articles saved to: {file}"
+  },
+  "csv": {
+    "saved": "✓ CSV file saved: {filename}",
+    "no_articles": "No articles to save.",
+    "error": "Error saving CSV file: {error}"
+  },
+  "errors": {
+    "initialization": "❌ Initialization Error: {error}",
+    "general": "❌ An error occurred: {error}",
+    "fatal": "❌ Fatal error: {error}",
+    "retry": "Please try again.",
+    "fetch_news": "Error fetching news: {error}",
+    "newsapi_error": "Error from NewsAPI: {error}"
+  },
+  "ner": {
+    "loading": "Loading NER model ({model})...",
+    "loaded": "✓ NER model loaded successfully",
+    "not_found": "Warning: spaCy model '{model}' not found.",
+    "download_instruction": "Please download it using: python -m spacy download {model}",
+    "fallback": "Falling back to basic entity extraction...",
+    "no_entities": "No named entities found.",
+    "header": "Named Entities (sorted by frequency):",
+    "entity": "Entity",
+    "type": "Type",
+    "frequency": "Frequency"
+  },
+  "summarizer": {
+    "loading": "Loading summarization model (this may take a moment on first run)...",
+    "loaded": "✓ Summarization model loaded successfully",
+    "error": "Warning: Could not load summarization model: {error}",
+    "fallback_error": "Warning: Summarization failed ({error}). Using fallback method.",
+    "no_articles": "No articles to summarize.",
+    "no_headlines": "No valid headlines found.",
+    "fallback_title": "Top headlines overview:"
+  }
+}

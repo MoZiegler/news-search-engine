@@ -1,0 +1,67 @@
+{
+  "app": {
+    "title": "Nachrichten-Suchmaschine",
+    "welcome": "Willkommen bei der Nachrichten-Suchmaschine",
+    "goodbye": "Vielen Dank für die Nutzung der Nachrichten-Suchmaschine. Auf Wiedersehen!",
+    "interrupted": "Unterbrochen. Auf Wiedersehen!"
+  },
+  "language": {
+    "select": "Sprache auswählen:",
+    "english": "Englisch (en)",
+    "german": "Deutsch (de)",
+    "prompt": "Geben Sie Ihre Wahl ein (1 oder 2) [Standard: 1] (oder 'quit' zum Beenden): ",
+    "invalid": "Ungültige Auswahl. Bitte geben Sie 1 oder 2 ein.",
+    "selected": "Ausgewählt"
+  },
+  "search": {
+    "prompt": "Geben Sie ein Thema ein, nach dem gesucht werden soll (oder 'quit' zum Beenden): ",
+    "searching": "🔍 Suche nach Nachrichten über: '{query}' (Sprache: {language})",
+    "please_wait": "Bitte warten...",
+    "found": "✓ {count} Artikel gefunden",
+    "no_results": "❌ Keine Artikel gefunden. Bitte versuchen Sie eine andere Suchanfrage.",
+    "invalid_topic": "⚠️  Bitte geben Sie ein gültiges Thema ein.",
+    "another": "Nach einem anderen Thema suchen? (j/n) [Standard: j]: "
+  },
+  "display": {
+    "top_articles": "TOP 15 ARTIKEL (nach Relevanz sortiert)",
+    "summary": "ZUSAMMENFASSUNG DER TOP 15 SCHLAGZEILEN",
+    "entities": "ANALYSE DER BENANNTEN ENTITÄTEN",
+    "source": "Quelle",
+    "published": "Veröffentlicht",
+    "saved": "📄 Alle {count} Artikel gespeichert in: {file}"
+  },
+  "csv": {
+    "saved": "✓ CSV-Datei gespeichert: {filename}",
+    "no_articles": "Keine Artikel zum Speichern.",
+    "error": "Fehler beim Speichern der CSV-Datei: {error}"
+  },
+  "errors": {
+    "initialization": "❌ Initialisierungsfehler: {error}",
+    "general": "❌ Ein Fehler ist aufgetreten: {error}",
+    "fatal": "❌ Schwerwiegender Fehler: {error}",
+    "retry": "Bitte versuchen Sie es erneut.",
+    "fetch_news": "Fehler beim Abrufen von Nachrichten: {error}",
+    "newsapi_error": "Fehler von NewsAPI: {error}"
+  },
+  "ner": {
+    "loading": "Lade NER-Modell ({model})...",
+    "loaded": "✓ NER-Modell erfolgreich geladen",
+    "not_found": "Warnung: spaCy-Modell '{model}' nicht gefunden.",
+    "download_instruction": "Bitte laden Sie es herunter mit: python -m spacy download {model}",
+    "fallback": "Verwende einfache Entitätsextraktion...",
+    "no_entities": "Keine benannten Entitäten gefunden.",
+    "header": "Benannte Entitäten (nach Häufigkeit sortiert):",
+    "entity": "Entität",
+    "type": "Typ",
+    "frequency": "Häufigkeit"
+  },
+  "summarizer": {
+    "loading": "Lade Zusammenfassungsmodell (kann beim ersten Mal etwas dauern)...",
+    "loaded": "✓ Zusammenfassungsmodell erfolgreich geladen",
+    "error": "Warnung: Zusammenfassungsmodell konnte nicht geladen werden: {error}",
+    "fallback_error": "Warnung: Zusammenfassung fehlgeschlagen ({error}). Verwende Ersatzmethode.",
+    "no_articles": "Keine Artikel zum Zusammenfassen.",
+    "no_headlines": "Keine gültigen Schlagzeilen gefunden.",
+    "fallback_title": "Übersicht der Top-Schlagzeilen:"
+  }
+}

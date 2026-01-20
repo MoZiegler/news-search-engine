@@ -1,0 +1,49 @@
+{
+    "name": "News Search Engine",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "news-search-engine",
+    "workspaceFolder": "/app",
+    
+    // Features to install in the container
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    
+    // VS Code settings
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": false,
+                "python.linting.flake8Enabled": true,
+                "python.formatting.provider": "black",
+                "python.testing.pytestEnabled": true,
+                "python.testing.unittestEnabled": false,
+                "editor.formatOnSave": true,
+                "files.exclude": {
+                    "**/__pycache__": true,
+                    "**/*.pyc": true
+                }
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-azuretools.vscode-docker",
+                "GitHub.copilot"
+            ]
+        }
+    },
+    
+    // Forward ports (if you add a web interface later)
+    "forwardPorts": [],
+    
+    // Use 'postCreateCommand' to run commands after the container is created
+    "postCreateCommand": "pip list",
+    
+    // Comment out to connect as root instead
+    "remoteUser": "root"
+}

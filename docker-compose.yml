@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  news-search-engine:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: news-search-engine
+    env_file:
+      - .env
+    volumes:
+      # Mount for CSV output files
+      - ./output:/app/output
+      # Mount source code for development (Dev Container)
+      - .:/app
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OUTPUT_DIR=/app/output
+    # Keep container running for Dev Container
+    command: sleep infinity
