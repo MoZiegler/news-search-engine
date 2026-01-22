@@ -1,11 +1,11 @@
 # CLI News Search Engine (Python)
 
-A Python-based news search engine that allows users to search for recent news articles on any topic, with automatic summarization and named entity recognition.
+A Python-based command-line interface (CLI) news search engine that allows users to search for recent news articles on any topic, with automatic summarization and named entity recognition (NER).
 
 ## Features
 
 - 🔍 Search for news articles on any topic
-- 🌍 Support for multiple languages (English and German)
+- 🌍 Support for multiple languages (English and German currently supported)
 - 📊 Displays top-15 most relevant articles sorted by relevancy
 - 💾 Exports all results to CSV file automatically
 - 📝 Automatic summarization of top headlines
