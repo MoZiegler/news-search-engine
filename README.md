@@ -24,7 +24,8 @@ news-search-engine/
 │   └── devcontainer.json          # VS Code Dev Container configuration
 ├── .github/
 │   └── workflows/
-│       └── tests.yml              # GitHub Actions CI/CD workflow (optional)
+│       ├── release.yml            # GitHub Actions CI/CD workflow (create release)
+│       └── tests.yml              # GitHub Actions CI/CD workflow (unit tests)
 ├── src/
 │   ├── __init__.py                # Package initialization
 │   ├── csv_handler.py             # CSV export functionality

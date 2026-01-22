@@ -25,7 +25,7 @@ jobs:
         body: |
           Release ${{ github.ref_name }}
           
-          ## What's Changed
+          ## What's Changed:
           - See commit history for details
         draft: false
         prerelease: false
